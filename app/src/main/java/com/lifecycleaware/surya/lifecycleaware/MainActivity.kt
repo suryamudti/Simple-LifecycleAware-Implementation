@@ -22,6 +22,11 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    override fun onRestart() {
+        super.onRestart()
+        Log.i(TAG, "Owner onRestart")
+    }
+
     override fun onStart() {
         super.onStart()
         Log.i(TAG, "Owner onStart")
